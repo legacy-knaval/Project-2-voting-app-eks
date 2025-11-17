@@ -8,6 +8,8 @@
 
 This application, while simple, uses multiple components commonly found in modern distributed architectures, giving you hands-on practice in connecting services, handling containers, and working with basic infrastructure automation.
 
+In this second project, you’ll take the Voting App (Python vote, Node.js result, .NET worker, Redis, and PostgreSQL) and deploy it to a production-like Amazon EKS (Kubernetes) cluster. You’ll also set up a CI/CD pipeline using GitHub Actions to build and deploy your microservices automatically.
+
 ## Application Overview
 
 The voting application includes:
