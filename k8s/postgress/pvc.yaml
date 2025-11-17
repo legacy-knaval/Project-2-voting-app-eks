@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kenny-postgres-pvc
+  namespace: kenny
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: kenny-postgres-sc
+  resources:
+    requests:
+      storage: 5Gi
