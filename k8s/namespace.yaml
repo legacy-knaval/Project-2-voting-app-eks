@@ -1,0 +1,5 @@
+# Namespace donde vivirán TODOS tus recursos
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kenny

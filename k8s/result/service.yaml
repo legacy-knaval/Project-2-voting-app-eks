@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kenny-result-service
+  namespace: kenny
+spec:
+  selector:
+    app: kenny-result
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

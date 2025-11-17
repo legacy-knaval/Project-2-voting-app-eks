@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kenny-voting-ingress
+  namespace: kenny
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    # VOTE APP
+    - host: kenny.vote.diogohack.shop
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kenny-vote-service
+                port:
+                  number: 80
+
+    # RESULT APP
+    - host: kenny.result.diogohack.shop
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kenny-result-service
+                port:
+                  number: 80
