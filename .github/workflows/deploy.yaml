@@ -70,7 +70,7 @@ jobs:
     - name: Update kubeconfig
       run: |
         aws eks update-kubeconfig \
-          --name ironhack-main2 \
+          --name ironhack-main-2 \
           --region us-west-1
 
     #Clean Deploy - RECOMENDADO PARA LA DEMO
