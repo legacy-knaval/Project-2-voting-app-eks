@@ -77,9 +77,10 @@ jobs:
     #Deploy Kubernetes manifests
     - name: Apply Kubernetes Manifests
       run: |
-        kubectl apply -f k8s/ingress/
-        kubectl apply -f k8s/redis/
+        kubectl apply -f k8s/secrets/
         kubectl apply -f k8s/postgress/
+        kubectl apply -f k8s/redis/
+        kubectl apply -f k8s/worker/
         kubectl apply -f k8s/vote/
         kubectl apply -f k8s/result/
-        kubectl apply -f k8s/worker/
+        kubectl apply -f k8s/ingress/
