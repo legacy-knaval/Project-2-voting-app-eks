@@ -71,7 +71,7 @@ jobs:
     - name: Update kubeconfig
       run: |
         aws eks update-kubeconfig \
-          --name ironhack-main \
+          --name ironhack-main-2 \
           --region us-west-1
 
     #Deploy Kubernetes manifests
